@@ -129,6 +129,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu_function.cpp" />
+    <ClCompile Include="menu_item.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="menu.hpp" />
+    <ClInclude Include="menu_function.hpp" />
+    <ClInclude Include="menu_item.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
