@@ -1,14 +1,14 @@
-#include "menu_items.hpp"
+#include "menu_item.hpp"
 
 #include <cstddef>
 
-#include "menu_functions.hpp"
+#include "menu_function.hpp"
 
-const KSerikov::MenuItem KSerikov::STUDY_SUMM = {
-    "1 - Хочу научиться складывать!", KSerikov::study_summ, &KSerikov::STUDY
+const KSerikov::MenuItem KSerikov::STUDY_SUM = {
+    "1 - Хочу научиться складывать!", KSerikov::study_sum, &KSerikov::STUDY
 };
-const KSerikov::MenuItem KSerikov::STUDY_SUBSTRACT = {
-    "2 - Хочу научиться вычитать!", KSerikov::study_substract, &KSerikov::STUDY
+const KSerikov::MenuItem KSerikov::STUDY_SUBTRACT = {
+    "2 - Хочу научиться вычитать!", KSerikov::study_subtract, &KSerikov::STUDY
 };
 const KSerikov::MenuItem KSerikov::STUDY_MULTIPLY = {
     "3 - Хочу научиться умножать!", KSerikov::study_multiply, &KSerikov::STUDY
@@ -23,8 +23,8 @@ const KSerikov::MenuItem KSerikov::STUDY_GO_BACK = {
 namespace {
     const KSerikov::MenuItem* const study_children[] = {
         &KSerikov::STUDY_GO_BACK,
-        &KSerikov::STUDY_SUMM,
-        &KSerikov::STUDY_SUBSTRACT,
+        &KSerikov::STUDY_SUM,
+        &KSerikov::STUDY_SUBTRACT,
         &KSerikov::STUDY_MULTIPLY,
         &KSerikov::STUDY_DIVIDE
     };
