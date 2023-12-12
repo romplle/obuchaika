@@ -1,23 +1,23 @@
-#include "menu_item.hpp"
+п»ї#include "menu_item.hpp"
 
 #include <cstddef>
 
 #include "menu_function.hpp"
 
 const KSerikov::MenuItem KSerikov::STUDY_ALGEBRA_SUM = {
-    "1 - Хочу научиться складывать!", KSerikov::study_algebra_sum, &KSerikov::STUDY_ALGEBRA
+    "1 - РҐРѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ СЃРєР»Р°РґС‹РІР°С‚СЊ!", KSerikov::study_algebra_sum, &KSerikov::STUDY_ALGEBRA
 };
 const KSerikov::MenuItem KSerikov::STUDY_ALGEBRA_SUBTRACT = {
-    "2 - Хочу научиться вычитать!", KSerikov::study_algebra_subtract, &KSerikov::STUDY_ALGEBRA
+    "2 - РҐРѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ РІС‹С‡РёС‚Р°С‚СЊ!", KSerikov::study_algebra_subtract, &KSerikov::STUDY_ALGEBRA
 };
 const KSerikov::MenuItem KSerikov::STUDY_ALGEBRA_MULTIPLY = {
-    "3 - Хочу научиться умножать!", KSerikov::study_algebra_multiply, &KSerikov::STUDY_ALGEBRA
+    "3 - РҐРѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ СѓРјРЅРѕР¶Р°С‚СЊ!", KSerikov::study_algebra_multiply, &KSerikov::STUDY_ALGEBRA
 };
 const KSerikov::MenuItem KSerikov::STUDY_ALGEBRA_DIVIDE = {
-    "4 - Хочу научиться делить!", KSerikov::study_algebra_divide, &KSerikov::STUDY_ALGEBRA
+    "4 - РҐРѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ РґРµР»РёС‚СЊ!", KSerikov::study_algebra_divide, &KSerikov::STUDY_ALGEBRA
 };
 const KSerikov::MenuItem KSerikov::STUDY_ALGEBRA_GO_BACK = {
-    "0 - Выйти в главное меню!", KSerikov::go_back, &KSerikov::STUDY_ALGEBRA
+    "0 - Р’С‹Р№С‚Рё РІ РіР»Р°РІРЅРѕРµ РјРµРЅСЋ!", KSerikov::go_back, &KSerikov::STUDY_ALGEBRA
 };
 
 namespace {
@@ -32,13 +32,13 @@ namespace {
 }
 
 const KSerikov::MenuItem KSerikov::STUDY_MATHAN_DIFF = {
-    "1 - Хочу научиться дифференцировать!", KSerikov::study_mathan_diff, &KSerikov::STUDY_ALGEBRA
+    "1 - РҐРѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ РґРёС„С„РµСЂРµРЅС†РёСЂРѕРІР°С‚СЊ!", KSerikov::study_mathan_diff, &KSerikov::STUDY_ALGEBRA
 };
 const KSerikov::MenuItem KSerikov::STUDY_MATHAN_INTEGRALS = {
-    "2 - Хочу научиться брать интегралы!", KSerikov::study_mathan_integrals, &KSerikov::STUDY_ALGEBRA
+    "2 - РҐРѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ Р±СЂР°С‚СЊ РёРЅС‚РµРіСЂР°Р»С‹!", KSerikov::study_mathan_integrals, &KSerikov::STUDY_ALGEBRA
 };
 const KSerikov::MenuItem KSerikov::STUDY_MATHAN_GO_BACK = {
-    "0 - Выйти в главное меню!", KSerikov::go_back, &KSerikov::STUDY_ALGEBRA
+    "0 - Р’С‹Р№С‚Рё РІ РіР»Р°РІРЅРѕРµ РјРµРЅСЋ!", KSerikov::go_back, &KSerikov::STUDY_ALGEBRA
 };
 
 namespace {
@@ -51,13 +51,13 @@ namespace {
 }
 
 const KSerikov::MenuItem KSerikov::STUDY_ALGEBRA = {
-    "1 - Хочу учиться алгебре!", KSerikov::show_menu,& KSerikov::MAIN, study_algebra_children, study_algebra_size
+    "1 - РҐРѕС‡Сѓ СѓС‡РёС‚СЊСЃСЏ Р°Р»РіРµР±СЂРµ!", KSerikov::show_menu,& KSerikov::MAIN, study_algebra_children, study_algebra_size
 };
 const KSerikov::MenuItem KSerikov::STUDY_MATHAN = {
-    "2 - Хочу изучать математический анализ!", KSerikov::show_menu,& KSerikov::MAIN, study_mathan_children, study_mathan_size
+    "2 - РҐРѕС‡Сѓ РёР·СѓС‡Р°С‚СЊ РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·!", KSerikov::show_menu,& KSerikov::MAIN, study_mathan_children, study_mathan_size
 };
 const KSerikov::MenuItem KSerikov::STUDY_GO_BACK = {
-    "0 - Выйти в главное меню", KSerikov::go_back, &KSerikov::STUDY
+    "0 - Р’С‹Р№С‚Рё РІ РіР»Р°РІРЅРѕРµ РјРµРЅСЋ", KSerikov::go_back, &KSerikov::STUDY
 };
 
 namespace {
@@ -70,10 +70,10 @@ namespace {
 }
 
 const KSerikov::MenuItem KSerikov::STUDY = {
-    "1 - Хочу учиться математике!", KSerikov::show_menu, &KSerikov::MAIN, study_children, study_size
+    "1 - РҐРѕС‡Сѓ СѓС‡РёС‚СЊСЃСЏ РјР°С‚РµРјР°С‚РёРєРµ!", KSerikov::show_menu, &KSerikov::MAIN, study_children, study_size
 };
 const KSerikov::MenuItem KSerikov::EXIT = {
-    "0 - Я лучше пойду полежу...", KSerikov::exit, &KSerikov::MAIN
+    "0 - РЇ Р»СѓС‡С€Рµ РїРѕР№РґСѓ РїРѕР»РµР¶Сѓ...", KSerikov::exit, &KSerikov::MAIN
 };
 
 namespace {
