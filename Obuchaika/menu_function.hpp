@@ -6,9 +6,13 @@ namespace KSerikov {
 
 	const MenuItem* exit(const MenuItem* current);
 
-	const MenuItem* study_sum(const MenuItem* current);
-	const MenuItem* study_subtract(const MenuItem* current);
-	const MenuItem* study_multiply(const MenuItem* current);
-	const MenuItem* study_divide(const MenuItem* current);
-	const MenuItem* study_go_back(const MenuItem* current);
+	const MenuItem* go_back(const MenuItem* current);
+
+	const MenuItem* study_algebra_sum(const MenuItem* current);
+	const MenuItem* study_algebra_subtract(const MenuItem* current);
+	const MenuItem* study_algebra_multiply(const MenuItem* current);
+	const MenuItem* study_algebra_divide(const MenuItem* current);
+
+	const MenuItem* study_mathan_diff(const MenuItem* current);
+	const MenuItem* study_mathan_integrals(const MenuItem* current);
 }
